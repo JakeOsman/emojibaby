@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="emoji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OzJ-xg-SQ0">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OzJ-xg-SQ0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KOh-mo-rWL"/>
+                            <constraint firstItem="OzJ-xg-SQ0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="idW-jY-OZJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OzJ-xg-SQ0" secondAttribute="bottom" id="sLL-KA-Alf"/>
+                            <constraint firstAttribute="trailing" secondItem="OzJ-xg-SQ0" secondAttribute="trailing" id="wmM-Tr-RNi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableviewyezus" destination="OzJ-xg-SQ0" id="1BE-8A-FOd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="129.98500749625188"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WzH-qW-X43">
+            <objects>
+                <viewController id="5Sb-LB-fRp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KZG-1O-v1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cnj-Hc-ujC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cUW-fy-y79">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0M-7H-RFz">
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctP-uH-2rH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ctP-uH-2rH" firstAttribute="top" secondItem="g0M-7H-RFz" secondAttribute="bottom" constant="50" id="0Ph-Hq-UGe"/>
+                            <constraint firstItem="g0M-7H-RFz" firstAttribute="top" secondItem="KZG-1O-v1X" secondAttribute="bottom" constant="40" id="DIy-nN-p9o"/>
+                            <constraint firstItem="g0M-7H-RFz" firstAttribute="centerX" secondItem="cUW-fy-y79" secondAttribute="centerX" id="J9J-j2-MdM"/>
+                            <constraint firstItem="ctP-uH-2rH" firstAttribute="centerX" secondItem="cUW-fy-y79" secondAttribute="centerX" id="PtX-wp-4i7"/>
+                            <constraint firstItem="ctP-uH-2rH" firstAttribute="centerX" secondItem="cUW-fy-y79" secondAttribute="centerX" id="xab-86-iHE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcn-RA-NNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="130"/>
         </scene>
     </scenes>
 </document>
